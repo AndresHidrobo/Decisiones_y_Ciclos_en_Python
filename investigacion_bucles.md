@@ -1,15 +1,17 @@
 # 1. Diferencias entre un bucle controlado por contador y un bucle controlado por condición.
-    Un método se controla mediante un contador (que incrementa o decrece), normalmente en cada iteración del bucle, y este finaliza cuando el contador alcanza un límite conocido. Generalmente se trata de un bucle "for" o similar.
+    Un método se controla mediante un contador (que incrementa o decrece), normalmente en cada iteración del bucle, y este finaliza cuando el contador alcanza un límite conocido.
+    Generalmente se trata de un bucle "for" o similar.
 
-    El otro método se controla mediante una expresión condicional (que se evalúa como verdadera o falsa), la cual puede o no cambiar en cada iteración. Normalmente se trata de un bucle "while".
+    El otro método se controla mediante una expresión condicional (que se evalúa como verdadera o falsa), la cual puede o no cambiar en cada iteración.
+    Normalmente se trata de un bucle "while".
 
 # 2. Ejempos cotidianos
-# Bucle Controlado por Contador
+# # Bucle Controlado por Contador
     Contar cuántas páginas lees de un libro:
     “Voy a leer 5 páginas cada día.”
     -La entrada es (5) páginas
     -Entonces el proceso de leer la página se repitela hasta que leas las 5 páginas del libro.
-# Bucle Controlado por Condición
+# # Bucle Controlado por Condición
     Repetir la tarea hasta que esté correcta
     -El preceso se repetirá hasta que se cumpla la condición
 
