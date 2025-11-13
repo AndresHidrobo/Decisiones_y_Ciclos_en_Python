@@ -6,12 +6,12 @@
     Normalmente se trata de un bucle "while".
 
 # 2. Ejempos cotidianos
-# # Bucle Controlado por Contador
+### Bucle Controlado por Contador
     Contar cuántas páginas lees de un libro:
     “Voy a leer 5 páginas cada día.”
     -La entrada es (5) páginas
     -Entonces el proceso de leer la página se repitela hasta que leas las 5 páginas del libro.
-# # Bucle Controlado por Condición
+### Bucle Controlado por Condición
     Repetir la tarea hasta que esté correcta
     -El preceso se repetirá hasta que se cumpla la condición
 
