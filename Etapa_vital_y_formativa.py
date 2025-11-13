@@ -4,6 +4,7 @@ while True:
         if not age.isnumeric():
             print("\nIngrese una respuesta válida")
             continue
+        age=int(age)
         if 100 < age or age<0:
             print("\nIngrese una edad válida")
         else:

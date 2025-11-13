@@ -9,7 +9,7 @@ for i in range(0,3):
         print("\nNo deje ningún espacio vacio")
         i=i-1
     elif sign==user and clave==passw:
-        print("\nIniciós sesión con éxito")
+        print("\nInició sesión con éxito")
         left=True
         break
     else:

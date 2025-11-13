@@ -1,51 +1,52 @@
 while True:
-    try:
-        age = int(input("\nIngrese su edad: "))
-        if 100 < age or age<18:
-            print("\nIngrese una edad válida")
-        else:
-            break
-    except ValueError:
-        print("\nIngrese un valor válido")
+    age = input("\nIngrese su edad: ")
+    if not age.isnumeric():
+        print("\nIngrese una respuesta válida")
+        continue
+    age=int(age)
+    if 100 < age or age<18:
+        print("\nIngrese una edad válida")
+    else:
+        break
 while True:
-    try:
-        license=int(input("\nDigite la opción, posee licencia de conducir vigente (1.si | 2.no):"))
-        if license==1:
+        license=input("\nDigite la opción, posee licencia de conducir vigente (si/no): ").lower()
+        if not license or license.isspace():
+            print("\nIngrese una respuesta válida")
+            continue
+        if license=="si":
             permiso=True
             break
-        elif license==2:
+        elif license=="no":
             permiso=False
             break
         else:
             print("\nIngrese una opción válida")
-    except ValueError:
-        print("\nIngrese un valor válido")
 while True:
-    try:
-        option=int(input("\n¿Posee vehículo propio? (1.si | 2.no): "))
-        if option==1:
+        option=input("\n¿Posee vehículo propio? (si/no): ").lower()
+        if not option or option.isspace():
+            print("\nIngrese una respuesta válida")
+            continue
+        if option=="si":
             car=True
             break
-        elif option==2:
+        elif option=="no":
             while True:
-                try:
-                    option_2 = int(input("\n¿Tiene algún vehículo que se le autorizó su prestamo? (1.si | 2.no): "))
-                    if option_2==1:
+                    option_2 =input("\n¿Tiene algún vehículo que se le autorizó su prestamo? (si/no): ").lower()
+                    if not option_2 or option_2.isspace():
+                        print("\nIngrese una respuesta válida")
+                        continue
+                    if option_2=="si":
                         car=True
                         break
-                    elif option_2==2:
+                    elif option_2=="no":
                         car=False
                         break
                     else:
                         print("\nIngrese una opción válida")
-                except ValueError:
-                    print("\nIngrese un valor válido")
             break
         else:
             print("\nIngrese una opción válida")
-    except ValueError:
-        print("\nIngrese un valor válido")
-if age>=18 and permiso==True and car==True:
+if age>=18 and permiso and car:
     print("\nUsted es apto para participar en la competencia")
 else:
     print("\nUsted no es apto para participar en la competencia")   

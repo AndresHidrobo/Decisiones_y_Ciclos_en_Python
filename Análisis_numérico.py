@@ -1,31 +1,38 @@
-n1=int(input("\nIngrese un número: "))
-n2=int(input("\nIngrese otro número: "))
-n3=int(input("\nIngrese un último número: "))
 while True:
-    n1=int(input("\nIngrese un número: "))
-    if n1.isspace() or not n1:
+    n1=input("\nIngrese un número entero: ")
+    verificar_n1=n1.lstrip('+-.').isnumeric()
+    if not verificar_n1:
         print("\nIngrese una respuesta válida")
         continue
     else:
+        n1=float(n1)
         break
 while True:
-    n2=int(input("\nIngrese un número: "))
-    if n2.isspace() or not n2:
+    n2=input("\nIngrese un número entero: ")
+    verificar_n2= n2.lstrip('+-').isnumeric()
+    if not verificar_n2:
         print("\nIngrese una respuesta válida")
         continue
     else:
+        n2=int(n2)
         break
 while True:
-    n3=int(input("\nIngrese un número: "))
-    if n3.isspace() or not n3:
+    n3=input("\nIngrese un número entero: ")
+    verificar_n3= n3.lstrip('+-').isnumeric()
+    if not verificar_n3:
         print("\nIngrese una respuesta válida")
         continue
     else:
+        n3=int(n3)
         break
 
 if n1>0 and n2>0 and n3>0:
-    print("Los tres números son positivos")
+    print("\nLos tres números son positivos")
 elif n1<0 or n2<0 or n3<0:
-    print("Por lo menos uno de los número ingresados es negativo")
+    print("\nPor lo menos uno de los número ingresados es negativo")
+    if (n1==0 and n2!=0 and n3!=0) or (n2==0 and n1==0 and n3!=0) or (n3==0 and n1!=0 and n2!=0):
+        print("\nExactamente un número de los ingresados es igual a cero")
 elif (n1==0 and n2!=0 and n3!=0) or (n2==0 and n1==0 and n3!=0) or (n3==0 and n1!=0 and n2!=0):
-    print("Exactamente un número de los ingresados es igual a cero")
+    print("\nExactamente un número de los ingresados es igual a cero")
+else:
+    print("\nNo se cumplen ninguna de las condiciones requeridas para imprimir")
