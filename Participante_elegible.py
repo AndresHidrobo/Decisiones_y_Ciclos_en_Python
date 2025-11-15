@@ -1,6 +1,6 @@
 while True:
     age = input("\nIngrese su edad: ")
-    if not age.isnumeric():
+    if not age.isnumeric() or age.isspace():
         print("\nIngrese una respuesta válida")
         continue
     age=int(age)
